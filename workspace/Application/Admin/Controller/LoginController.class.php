@@ -11,5 +11,10 @@ class LoginController extends Controller {
 
     	return $this->display();
     }
+    
+    
+    public function checkUser(){
+        echo "aa";
+    }
 
 }

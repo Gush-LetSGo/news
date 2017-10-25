@@ -13,9 +13,9 @@
   <title>singcms内容管理平台</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/p2164894/workspace/Public/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="signin.css" rel="stylesheet">
+<!--   <link href="signin.css" rel="stylesheet"> -->
 
 
 
@@ -42,14 +42,14 @@
       <label  class="sr-only">密码</label>
       <input type="password" name="password" id="inputPassword" class="form-control" placeholder="密码" required>
       <br />
-      <button class="btn btn-lg btn-primary btn-block" type="submit" >登录</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="login.checkUser()">登录</button>
     </form>
 
 </div> <!-- /container -->
-<script src="/Public/js/jquery.js"></script>
-<script src="/Public/js/dialog/layer.js"></script>
-<script src="/Public/js/dialog.js"></script>
-<script src="/Public/js/admin/login.js"></script>
+<script src="/p2164894/workspace/Public/js/jquery.js"></script>
+<script src="/p2164894/workspace/Public/js/dialog/layer.js"></script>
+<script src="/p2164894/workspace/Public/js/dialog.js"></script>
+<script src="/p2164894/workspace/Public/js/admin/login.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </body>
 </html>

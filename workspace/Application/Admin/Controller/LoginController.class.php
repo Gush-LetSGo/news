@@ -8,13 +8,37 @@ use Think\Controller;
 class LoginController extends Controller {
 
     public function index(){
-
+        if(session('userData')){
+            redirect('/p2164894/workspace/index.php/admin/index/index');
+        }
     	return $this->display();
     }
     
     
     public function checkUser(){
-        echo "aa";
+        $username=$_POST['username'];
+        $password=$_POST['password'];
+        if(!trim($username)){
+            return show(0, '用户名不能为空！');
+        }
+        if(!trim($password)){
+            return show(0, 'mima不能为空！');
+        }
+        $res=D('Admin')->getAdminByUsername($username);
+        if(!$res){
+            return show(0,'该用户不存在！');
+        }
+        if($res['password']!=getMd5Password($password)){
+            return show(0,'密码错误！');
+        }
+        session('userData',$res);
+        return show(1,'登录成功！');
+        
+    }
+    
+    public function loginOut(){
+        session('userData',null);
+        redirect('/p2164894/workspace/index.php/admin/login/index');
     }
 
 }

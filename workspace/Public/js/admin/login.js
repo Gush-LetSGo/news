@@ -1,21 +1,24 @@
 /**
  * 后台管理员登录功能
  */
+  $("body").keydown(function() {
+	  if (event.keyCode == "13") {//keyCode=13是回车键
+		  login.checkUser();
+	  }
+  })
 var login={
 	checkUser:function(){
 		var username=$('input[name="username"]').val();
 		var password=$('input[name="password"]').val();
-		if(!username){
-			dialog.error("用户名不能为空！");
-		}
-		if(!password){
-			dialog.error("密码不能为空！");
-		}
-		var url="index.php/admin/login/checkUser";
+		var url="/p2164894/workspace/index.php/admin/login/checkUser";
 		var userData={'username':username,'password':password};
 		$.post(url,userData,function(result){
-			alert(result);
-		})
+			if(result['status']==0){
+				dialog.error(result['message']);
+			}else{
+				dialog.success(result['message'],'/p2164894/workspace/index.php/admin/index/index');
+			}
+		},'json');
 	}
 }
 

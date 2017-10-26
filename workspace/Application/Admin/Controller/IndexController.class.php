@@ -7,7 +7,10 @@ use Think\Controller;
 class IndexController extends Controller {
     
     public function index(){
-    	$this->display();
+        if(!session('userData')){
+            redirect('/p2164894/workspace/index.php/admin/login/index');
+        }
+    	return $this->display();
     }
 
     public function main() {

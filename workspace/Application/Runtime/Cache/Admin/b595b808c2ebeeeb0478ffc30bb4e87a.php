@@ -61,7 +61,7 @@
        
         <li class="divider"></li>
         <li>
-          <a href="/admin.php?c=login&a=loginout"><i class="fa fa-fw fa-power-off"></i> 退出</a>
+          <a href="/p2164894/workspace/index.php/admin/login/loginOut"><i class="fa fa-fw fa-power-off"></i> 退出</a>
         </li>
       </ul>
     </li>
@@ -73,7 +73,7 @@
         <a href=""><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
       <li>
-        <a href=""><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
+        <a href="/p2164894/workspace/index.php/admin/index/index"><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
       </li>
 
     </ul>
@@ -204,7 +204,7 @@
 </div>
     <!-- /#wrapper -->
 
-<script src="/Public/js/admin/common.js"></script>
+<script src="/p2164894/workspace/Public/js/admin/common.js"></script>
 
 
 

@@ -5,8 +5,11 @@
 namespace Admin\Controller;
 use Think\Controller;
 
-class NewsListController extends Controller {
+class MenuController extends Controller {
     function index(){
+        $this->display();
+    }
+    function add(){
         $this->display();
     }
 }

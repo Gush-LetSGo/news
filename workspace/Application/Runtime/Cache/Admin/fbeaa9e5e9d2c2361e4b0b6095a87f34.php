@@ -38,8 +38,7 @@
 
 <body>
 <div id="wrapper">
-    
-<!-- Navigation -->
+    <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
@@ -73,7 +72,6 @@
       <li>
         <a href="/p2164894/workspace/index.php/admin/newsList/index"><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
       </li>
-
     </ul>
   </div>
   <!-- /.navbar-collapse -->

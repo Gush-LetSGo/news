@@ -40,8 +40,7 @@
 
 <div id="wrapper">
 
-    
-<!-- Navigation -->
+    <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
@@ -73,9 +72,8 @@
         <a href="/p2164894/workspace/index.php/admin/index/index"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
       <li>
-        <a href="/p2164894/workspace/index.php/admin/newsList/index"><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
+        <a href="/p2164894/workspace/index.php/admin/menu/index"><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
       </li>
-
     </ul>
   </div>
   <!-- /.navbar-collapse -->

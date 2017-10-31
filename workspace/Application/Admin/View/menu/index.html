@@ -9,24 +9,24 @@
             <div class="col-md-12">
                 <ol class="breadcrumb">
                     <li>
-                        <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">菜单管理</a>
+                        <i class="fa fa-dashboard"></i>  <a href="/p2164894/workspace/index.php/admin/menu/index">菜单管理</a>
                     </li>
-                    <li class="active">
+                    <!-- <li class="active">
                         <i class="fa fa-table"></i>{$nav}
-                    </li>
+                    </li> -->
                 </ol>
             </div>
         </div>
         <!-- /.row -->
         <div class="row">
-            <form action="/admin.php" method="get" class="col-md-12 form-inline">
+            <form action="/p2164894/workspace/index.php/admin/menu/index" method="get" class="col-md-12 form-inline">
           		<button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
                 <div class="input-group">
                     <span class="input-group-addon">类型</span>
                     <select class="form-control" name="type">
-                        <option value='' >请选择类型</option>
-                        <option value="1" >后台菜单</option>
-                        <option value="0" >前端导航</option>
+                        <option value="2" <if condition="$type eq 2">selected="selected"</if>>所有菜单</option>
+                        <option value="1" <if condition="$type eq 1">selected="selected"</if>>后台菜单</option>
+                        <option value="0" <if condition="$type eq 0">selected="selected"</if>>前端导航</option>
                     <select>
 	                <input type="hidden" name="c" value="menu"/>
 	                <input type="hidden" name="a" value="index"/>
@@ -47,7 +47,6 @@
 	                    <table class="table table-bordered table-hover singcms-table">
 	                        <thead>
 		                        <tr>
-		                            <th>排序</th>
 		                            <th>id</th>
 		                            <th>菜单名</th>
 		                            <th>模块名</th>
@@ -57,14 +56,13 @@
 		                        </tr>
 	                        </thead>
 	                        <tbody>
-		                        <volist name="menus" id="menu">
+		                        <volist name="menuData" id="menu">
 		                            <tr>
-		                                <td><input size="4" type="text" name="" value=""/></td>
-		                                <td></td>
-		                                <td></td>
-		                                <td></td>
-		                                <td></td>
-		                                <td></td>
+		                                <td>{$menu.menu_id}</td>
+		                                <td>{$menu.name}</td>
+		                                <td>{$menu.m}</td>
+		                                <td>{$menu.type|getMenuType}</td>
+		                                <td>{$menu.status|status}</td>
 		                                <td>
 			                                <span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id=""></span>
 			                                <a href="javascript:void(0)" attr-id="" id="singcms-delete"  attr-a="menu" attr-message="删除">
@@ -78,6 +76,7 @@
                     </form>
                     <nav>
                         <ul class="pagination">
+                        	{$pageRes}
                         </ul>
                     </nav>
                 </div>
@@ -91,13 +90,12 @@
 <!-- /#wrapper -->
 <!-- Morris Charts JavaScript -->
 <script>
-    var SCOPE = {
-        'add_url' : '/admin.php?c=menu&a=add',
-        'edit_url' : '/admin.php?c=menu&a=edit',
-        'set_status_url' : '/admin.php?c=menu&a=setStatus',
-        'listorder_url' : '/admin.php?c=menu&a=listorder',
-
-    }
+var SCOPE = {
+	    'add_url' : '/p2164894/workspace/index.php/admin/menu/add',
+	    'edit_url' : '/admin.php?c=menu&a=edit',
+	    'set_status_url' : '/admin.php?c=menu&a=setStatus',
+	    'listorder_url' : '/admin.php?c=menu&a=listorder',
+	}
 </script>
 <include file="Index/footer" />
 

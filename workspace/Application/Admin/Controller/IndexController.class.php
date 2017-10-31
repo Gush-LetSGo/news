@@ -4,12 +4,12 @@
  */
 namespace Admin\Controller;
 use Think\Controller;
-class IndexController extends Controller {
+class IndexController extends CommonController {
     
     public function index(){
-        if(!session('userData')){
-            redirect('/p2164894/workspace/index.php/admin/login/index');
-        }
+//         if(!session('userData')){
+//             redirect('/p2164894/workspace/index.php/admin/login/index');
+//         }
     	return $this->display();
     }
 

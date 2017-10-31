@@ -21,7 +21,7 @@ class CommonController extends Controller {
 		$isLogin = $this->isLogin();
 		if(!$isLogin) {
 			// 跳转到登录页面
-			$this->redirect('/admin.php?c=login');
+			redirect('/p2164894/workspace/index.php/admin/login/index');
 		}
 	}
 
@@ -30,7 +30,7 @@ class CommonController extends Controller {
 	 * @return array
 	 */
 	public function getLoginUser() {
-		return session("adminUser");
+		return session("userData");
 	}
 
 	/**

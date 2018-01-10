@@ -8,7 +8,7 @@ class IndexController extends CommonController {
     
     public function index(){
 //         if(!session('userData')){
-//             redirect('/p2164894/workspace/index.php/admin/login/index');
+//             redirect('/news/workspace/index.php/admin/login/index');
 //         }
     	return $this->display();
     }

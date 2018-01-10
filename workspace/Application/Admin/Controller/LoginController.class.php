@@ -9,7 +9,7 @@ class LoginController extends Controller {
 
     public function index(){
         if(session('userData')){
-            redirect('/p2164894/workspace/index.php/admin/index/index');
+            redirect('/news/workspace/index.php/admin/index/index');
         }
     	return $this->display();
     }
@@ -38,7 +38,7 @@ class LoginController extends Controller {
     
     public function loginOut(){
         session('userData',null);
-        redirect('/p2164894/workspace/index.php/admin/login/index');
+        redirect('/news/workspace/index.php/admin/login/index');
     }
 
 }

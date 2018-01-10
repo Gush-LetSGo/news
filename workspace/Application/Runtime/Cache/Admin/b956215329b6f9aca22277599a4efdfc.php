@@ -11,26 +11,26 @@
 
     <title>sing后台管理平台</title>
     <!-- Bootstrap Core CSS -->
-    <link href="/p2164894/workspace/Public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/news/workspace/Public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/p2164894/workspace/Public/css/sb-admin.css" rel="stylesheet">
+    <link href="/news/workspace/Public/css/sb-admin.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="/p2164894/workspace/Public/css/plugins/morris.css" rel="stylesheet">
+    <link href="/news/workspace/Public/css/plugins/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/p2164894/workspace/Public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/p2164894/workspace/Public/css/sing/common.css" />
-    <link rel="stylesheet" href="/p2164894/workspace/Public/css/party/bootstrap-switch.css" />
-    <link rel="stylesheet" type="text/css" href="/p2164894/workspace/Public/css/party/uploadify.css">
+    <link href="/news/workspace/Public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/news/workspace/Public/css/sing/common.css" />
+    <link rel="stylesheet" href="/news/workspace/Public/css/party/bootstrap-switch.css" />
+    <link rel="stylesheet" type="text/css" href="/news/workspace/Public/css/party/uploadify.css">
 
     <!-- jQuery -->
-    <script src="/p2164894/workspace/Public/js/jquery.js"></script>
-    <script src="/p2164894/workspace/Public/js/bootstrap.min.js"></script>
-    <script src="/p2164894/workspace/Public/js/dialog/layer.js"></script>
-    <script src="/p2164894/workspace/Public/js/dialog.js"></script>
-    <script type="text/javascript" src="/p2164894/workspace/Public/js/party/jquery.uploadify.js"></script>
+    <script src="/news/workspace/Public/js/jquery.js"></script>
+    <script src="/news/workspace/Public/js/bootstrap.min.js"></script>
+    <script src="/news/workspace/Public/js/dialog/layer.js"></script>
+    <script src="/news/workspace/Public/js/dialog.js"></script>
+    <script type="text/javascript" src="/news/workspace/Public/js/party/jquery.uploadify.js"></script>
 
 </head>
 
@@ -58,7 +58,7 @@
        
         <li class="divider"></li>
         <li>
-          <a href="/p2164894/workspace/index.php/admin/login/loginOut"><i class="fa fa-fw fa-power-off"></i> 退出</a>
+          <a href="/news/workspace/index.php/admin/login/loginOut"><i class="fa fa-fw fa-power-off"></i> 退出</a>
         </li>
       </ul>
     </li>
@@ -67,10 +67,10 @@
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav nav_list">
       <li>
-        <a href="/p2164894/workspace/index.php/admin/index/index"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
+        <a href="/news/workspace/index.php/admin/index/index"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
       <li>
-        <a href="/p2164894/workspace/index.php/admin/menu/index"><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
+        <a href="/news/workspace/index.php/admin/menu/index"><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
       </li>
     </ul>
   </div>
@@ -83,7 +83,7 @@
             <div class="col-md-12">
                 <ol class="breadcrumb">
                     <li>
-                        <i class="fa fa-dashboard"></i>  <a href="/p2164894/workspace/index.php/admin/menu/index">菜单管理</a>
+                        <i class="fa fa-dashboard"></i>  <a href="/news/workspace/index.php/admin/menu/index">菜单管理</a>
                     </li>
                     <!-- <li class="active">
                         <i class="fa fa-table"></i><?php echo ($nav); ?>
@@ -93,7 +93,7 @@
         </div>
         <!-- /.row -->
         <div class="row">
-            <form action="/p2164894/workspace/index.php/admin/menu/index" method="get" class="col-md-12 form-inline">
+            <form action="/news/workspace/index.php/admin/menu/index" method="get" class="col-md-12 form-inline">
           		<button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
                 <div class="input-group">
                     <span class="input-group-addon">类型</span>
@@ -163,13 +163,13 @@
 <!-- Morris Charts JavaScript -->
 <script>
 var SCOPE = {
-	    'add_url' : '/p2164894/workspace/index.php/admin/menu/add',
+	    'add_url' : '/news/workspace/index.php/admin/menu/add',
 	    'edit_url' : '/admin.php?c=menu&a=edit',
 	    'set_status_url' : '/admin.php?c=menu&a=setStatus',
 	    'listorder_url' : '/admin.php?c=menu&a=listorder',
 	}
 </script>
-<script src="/p2164894/workspace/Public/js/admin/common.js"></script>
+<script src="/news/workspace/Public/js/admin/common.js"></script>
 
 
 

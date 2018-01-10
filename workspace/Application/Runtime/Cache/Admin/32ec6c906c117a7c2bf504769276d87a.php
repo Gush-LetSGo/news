@@ -13,7 +13,7 @@
   <title>singcms内容管理平台</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="/p2164894/workspace/Public/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/news/workspace/Public/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
 <!--   <link href="signin.css" rel="stylesheet"> -->
 
@@ -46,10 +46,10 @@
     </form>
 	<div class="col-md-3"></div>
 </div> <!-- /container -->
-<script src="/p2164894/workspace/Public/js/jquery.js"></script>
-<script src="/p2164894/workspace/Public/js/dialog/layer.js"></script>
-<script src="/p2164894/workspace/Public/js/dialog.js"></script>
-<script src="/p2164894/workspace/Public/js/admin/login.js"></script>
+<script src="/news/workspace/Public/js/jquery.js"></script>
+<script src="/news/workspace/Public/js/dialog/layer.js"></script>
+<script src="/news/workspace/Public/js/dialog.js"></script>
+<script src="/news/workspace/Public/js/admin/login.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </body>
 </html>

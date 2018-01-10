@@ -10,13 +10,13 @@ var login={
 	checkUser:function(){
 		var username=$('input[name="username"]').val();
 		var password=$('input[name="password"]').val();
-		var url="/p2164894/workspace/index.php/admin/login/checkUser";
+		var url="/news/workspace/index.php/admin/login/checkUser";
 		var userData={'username':username,'password':password};
 		$.post(url,userData,function(result){
 			if(result['status']==0){
 				dialog.error(result['message']);
 			}else{
-				dialog.success(result['message'],'/p2164894/workspace/index.php/admin/index/index');
+				dialog.success(result['message'],'/news/workspace/index.php/admin/index/index');
 			}
 		},'json');
 	}

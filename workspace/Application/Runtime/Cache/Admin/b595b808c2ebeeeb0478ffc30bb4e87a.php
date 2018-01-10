@@ -11,26 +11,26 @@
 
     <title>sing后台管理平台</title>
     <!-- Bootstrap Core CSS -->
-    <link href="/p2164894/workspace/Public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/news/workspace/Public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/p2164894/workspace/Public/css/sb-admin.css" rel="stylesheet">
+    <link href="/news/workspace/Public/css/sb-admin.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="/p2164894/workspace/Public/css/plugins/morris.css" rel="stylesheet">
+    <link href="/news/workspace/Public/css/plugins/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/p2164894/workspace/Public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/p2164894/workspace/Public/css/sing/common.css" />
-    <link rel="stylesheet" href="/p2164894/workspace/Public/css/party/bootstrap-switch.css" />
-    <link rel="stylesheet" type="text/css" href="/p2164894/workspace/Public/css/party/uploadify.css">
+    <link href="/news/workspace/Public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/news/workspace/Public/css/sing/common.css" />
+    <link rel="stylesheet" href="/news/workspace/Public/css/party/bootstrap-switch.css" />
+    <link rel="stylesheet" type="text/css" href="/news/workspace/Public/css/party/uploadify.css">
 
     <!-- jQuery -->
-    <script src="/p2164894/workspace/Public/js/jquery.js"></script>
-    <script src="/p2164894/workspace/Public/js/bootstrap.min.js"></script>
-    <script src="/p2164894/workspace/Public/js/dialog/layer.js"></script>
-    <script src="/p2164894/workspace/Public/js/dialog.js"></script>
-    <script type="text/javascript" src="/p2164894/workspace/Public/js/party/jquery.uploadify.js"></script>
+    <script src="/news/workspace/Public/js/jquery.js"></script>
+    <script src="/news/workspace/Public/js/bootstrap.min.js"></script>
+    <script src="/news/workspace/Public/js/dialog/layer.js"></script>
+    <script src="/news/workspace/Public/js/dialog.js"></script>
+    <script type="text/javascript" src="/news/workspace/Public/js/party/jquery.uploadify.js"></script>
 
 </head>
 
@@ -60,7 +60,7 @@
        
         <li class="divider"></li>
         <li>
-          <a href="/p2164894/workspace/index.php/admin/login/loginOut"><i class="fa fa-fw fa-power-off"></i> 退出</a>
+          <a href="/news/workspace/index.php/admin/login/loginOut"><i class="fa fa-fw fa-power-off"></i> 退出</a>
         </li>
       </ul>
     </li>
@@ -69,10 +69,10 @@
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav nav_list">
       <li>
-        <a href="/p2164894/workspace/index.php/admin/index/index"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
+        <a href="/news/workspace/index.php/admin/index/index"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
       <li>
-        <a href="/p2164894/workspace/index.php/admin/menu/index"><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
+        <a href="/news/workspace/index.php/admin/menu/index"><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
       </li>
     </ul>
   </div>
@@ -202,7 +202,7 @@
 </div>
     <!-- /#wrapper -->
 
-<script src="/p2164894/workspace/Public/js/admin/common.js"></script>
+<script src="/news/workspace/Public/js/admin/common.js"></script>
 
 
 

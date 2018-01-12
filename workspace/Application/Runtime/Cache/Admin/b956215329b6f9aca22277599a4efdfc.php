@@ -138,7 +138,7 @@
 		                                <td><?php echo (status($menu["status"])); ?></td>
 		                                <td>
 			                                <span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id=""></span>
-			                                <a href="javascript:void(0)" attr-id="" id="singcms-delete"  attr-a="menu" attr-message="删除">
+			                                <a href="javascript:void(0)" attr-id="" menu_id="<?php echo ($menu["menu_id"]); ?>"  attr-a="menu" attr-message="删除" class="delete_menu">
 			                                	<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
 			                                </a>
 		                                </td>

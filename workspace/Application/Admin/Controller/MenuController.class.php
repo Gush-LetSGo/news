@@ -59,6 +59,19 @@ class MenuController extends CommonController {
         }
         
     }
+    
+    
+    //删除菜单
+    function delete(){
+        $menuId=$_POST['menuId'];
+        //echo $menuId;
+        $res=D('Menu')->deleteMenuById($menuId);
+        if($res){
+            return show(1,'删除成功!');
+        }else{
+            return show(0,'删除失败!');
+        }
+    }
 }
 
 

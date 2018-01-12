@@ -27,8 +27,20 @@ $("#singcms-button-submit").click(function(){
 	
 })
 
-
-
+//删除菜单
+$(".delete_menu").click(function(){
+	var menuId=$(this).attr("menu_id");
+	var url='/news/workspace/index.php/admin/menu/delete';
+	$.post(url,{'menuId':menuId},function(result){
+		if(result.status==1){
+			//添加成功
+			return dialog.success(result.message,'/news/workspace/index.php/admin/menu/index');
+		}else if(result.status==0){
+			//添加失败
+			return dialog.error(result.message)
+		}
+	},'json');
+})
 
 
 

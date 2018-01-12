@@ -34,6 +34,14 @@ class MenuModel extends Model {
         $data["status"]=array("neq",-1);
         return $this->_db->where($data)->count();
     }
+    
+    //根据id删除相应的菜单
+    public function deleteMenuById($menuId){
+        return $this->_db->where('menu_id="'.$menuId.'"')->delete();
+    }
+    
+    
+    
 }
 
 
